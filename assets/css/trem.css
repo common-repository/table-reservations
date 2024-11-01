@@ -1,0 +1,149 @@
+.trem-canvas {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.trem-canvas canvas {
+  height: auto;
+}
+
+.control-panel-info {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.control-panel-info .status {
+  width: 1em;
+  visibility: hidden;
+}
+
+.control-panel-info .number {
+  width: 1.5em;
+}
+
+.control-panel-info .users {
+  width: 2.5em;
+}
+
+.control-panel-info .size {
+  width: 4em;
+}
+
+.control-panel-info .remove {
+  width: 1em;
+  visibility: hidden;
+}
+
+#control-items {
+  padding: 0;
+  background: transparent;
+  height: fit-content;
+  margin: 0em;
+  padding-top: 0.1em;
+  border-radius: 1em;
+}
+
+#control-items li {
+  display: flex;
+  flex-flow: row;
+  margin: 1em 0.5em;
+}
+
+#control-items li i {
+  margin: auto;
+}
+
+#control-items li span {
+  margin: auto 0 auto 0px;
+  width: 1.5em;
+  justify-content: flex-start;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#control-items li input {
+  margin: auto 0.1em auto auto;
+  width: 2.5em;
+}
+
+#control-items li input[name="width"],
+#control-items li input[name="height"] {
+  width: 4em;
+}
+
+#control-items li button {
+  margin: 0;
+  width: 2em;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+#control-items li button i {
+  margin: 0;
+}
+
+#control-items li button i:hover {
+  cursor: pointer;
+}
+
+#control-items li button:hover {
+  cursor: pointer;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ v2.0 | 20110126
+ License: none (public domain)
+ 123123
+ */
+
+.container {
+  display: none;
+  zoom: 1;
+  position: absolute;
+  top: 0.5em;
+  right: 50px;
+}
+
+.tremtr-reservation {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-gap: 14px;
+}
+
+.tremtr-reservation-field {
+  display: grid;
+  grid-template-columns: 100px;
+}
+
+.tremtr-reservation-field textarea {
+  width: 400px;
+  height: 100px;
+}
+
+
+/*PRO*/
+ .mouse-cursor-gradient-tracking {
+   position: relative;
+   background: #7983ff;
+   border: none;
+   color: white;
+   cursor: pointer;
+   outline: none;
+   overflow: hidden;
+ }
+
+ .mouse-cursor-gradient-tracking span {
+   position: relative;
+ }
+
+ .mouse-cursor-gradient-tracking::before {
+   --size: 0;
+   content: ''; 
+   position: absolute; left: var(--x); top: var(--y); width: var(--size); height: var(--size); background: radial-gradient(circle closest-side, greenyellow, transparent); transform: translate(-50%, -50%); transition: width 0.2s ease, height 0.2s ease; } 
+   .mouse-cursor-gradient-tracking:hover::before { --size: 200px; }
